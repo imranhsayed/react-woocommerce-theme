@@ -17,6 +17,17 @@ These instructions will get you a copy of the project up and running on your loc
 
 ## Use :point_right:
 
+* Rename `congif.example.js` to `config.js` and update your WooCommerce config keys
+
+```ruby
+const keys = {
+	consumerKey: 'xxxxx',
+	consumerSecret: 'xxxxx',
+};
+
+export default keys;
+```
+
 ## Contributing :busts_in_silhouette:
 
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
