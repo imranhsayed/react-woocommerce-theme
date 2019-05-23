@@ -4,6 +4,7 @@ import store from '../client/store/store';
 import { matchRoutes } from 'react-router-config';
 import routes from '../client/routes';
 import WooCommerceAPI from 'woocommerce-api';
+import config from '../config';
 
 const app = express();
 
@@ -16,8 +17,8 @@ app.use( express.static( 'dist' ) );
 app.get( '/getProducts', ( request, response ) => {
 	var WooCommerce = new WooCommerceAPI({
 		url: 'https://www.orionhive.com/',
-		consumerKey: 'ck_c798f49c41c39bb5f4e57fe406d0a4180cabc499',
-		consumerSecret: 'cs_0f5f4521779f5972c26af2a0d2adfdebccd71400',
+		consumerKey: config.consumerKey,
+		consumerSecret: config.consumerSecret,
 		wpAPI: true,
 		version: 'wc/v3'
 	});
