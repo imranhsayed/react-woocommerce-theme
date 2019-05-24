@@ -24,9 +24,11 @@ const keys = {
 	consumerKey: 'xxxxx',
 	consumerSecret: 'xxxxx',
 };
-
-export default keys;
 ```
+
+## Common Commands :computer:
+
+* `dev` Runs webpack dev server in watch mode for both client and server in watch mode.
 
 ## Contributing :busts_in_silhouette:
 
